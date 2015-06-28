@@ -158,7 +158,7 @@ class Player(object):
             self.stars += 1
         
         if self.stars > THRESHOLD[self.rank]:
-            self.rank = self.rank - 1
+            self.rank = max(self.rank - 1,0)
             self.stars = self.stars - THRESHOLD[self.rank]
         
     def AddLoss(self):
