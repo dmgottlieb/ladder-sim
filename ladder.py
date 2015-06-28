@@ -137,7 +137,7 @@ class Season(object):
 class Player(object): 
     
     def __init__(self, G=100, alpha=2, beta=0.5):
-        self.skill = random.gammavariate(alpha, beta) # Mean = 2. k * theta = alpha * 1/beta
+        self.skill = random.gammavariate(alpha, beta) 
         self.ngames = int(self.skill*G) + 1
         self.rank = 25
         self.stars = 0
