@@ -2,6 +2,7 @@
 
 A script for numerically simulating outcomes on the Hearthstone competitive play ladder. 
 I built this to explore whether we can learn anything about skill variations in Hearthstone using only the distribution of ladder ranks. 
+The theory is discussed briefly under "how it works," below. 
 
 ## How to use
 
