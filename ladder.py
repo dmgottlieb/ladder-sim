@@ -80,7 +80,7 @@ class Season(object):
         elapsed_time = end_time - start_time
                 
         self.histogram = [len(R) for R in self.deadranks]
-        print "\n" + str(self.totalgames) + " games simulated in " + str(elapsed_time) + "seconds (" + str(self.totalgames / elapsed_time) + " games per second)."
+        print "\n" + str(self.totalgames) + " games simulated in " + str(elapsed_time) + " seconds (" + str(self.totalgames / elapsed_time) + " games per second)."
         
     def PlayAGame(self):
         # Choose a player
