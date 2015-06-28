@@ -138,7 +138,7 @@ class Player(object):
     
     def __init__(self, G=100, alpha=2, beta=0.5):
         self.skill = random.gammavariate(alpha, beta) 
-        self.ngames = int(self.skill*G) + 1
+        self.ngames = int(self.skill*G*alpha*beta) + 1
         self.rank = 25
         self.stars = 0
         self.streak = 0
