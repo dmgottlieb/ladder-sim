@@ -57,10 +57,13 @@ class Season(object):
         self.liveranks[25].extend(self.liveplayers)
         
     def RunSeason(self):
+        import time
         
         print "Simulating approx. " + str(self.finaltotal) + " games."
         print "Mean " + str(2 * self.finaltotal / self.nplayers) + " games per player." 
         print "Standard deviation " + str(pstdev([P.ngames for P in self.liveplayers]))
+        
+        start_time = time.clock()
         
         while len(self.liveplayers) >= 2:
             self.PlayAGame()
@@ -72,9 +75,12 @@ class Season(object):
                 
             sys.stdout.write(text)
             sys.stdout.flush()
+            
+        end_time = time.clock()
+        elapsed_time = end_time - start_time
                 
         self.histogram = [len(R) for R in self.deadranks]
-        print "\n" + str(self.totalgames) + " games simulated."
+        print "\n" + str(self.totalgames) + " games simulated in " + str(elapsed_time) + "seconds (" + str(elapsed_time / self.totalgames) + " seconds per game)."
         
     def PlayAGame(self):
         # Choose a player
