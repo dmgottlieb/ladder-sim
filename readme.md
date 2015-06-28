@@ -2,9 +2,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Contents**
 
-- [ladder-sim](#ladder-sim)
-  - [How to use](#how-to-use)
-  - [How it works](#how-it-works)
+- [About](#about)
+- [How to use](#how-to-use)
+- [How it works](#how-it-works)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
