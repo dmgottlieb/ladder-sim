@@ -41,7 +41,8 @@ class Season(object):
         self.alpha = alpha
         self.beta = beta
         
-        self.trial_id = "Players=" + str(nplayers) + ", G=" + str(G) + ", alpha=" + str(alpha) + ", beta=" + str(beta)
+        from time import ctime
+        self.trial_id = ctime() + ". Players=" + str(nplayers) + ", G=" + str(G) + ", alpha=" + str(alpha) + ", beta=" + str(beta) + "."
         
         self.AddPlayers(nplayers,G,alpha,beta)
         
