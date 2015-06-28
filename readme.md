@@ -8,7 +8,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# ladder-sim
+# About
 
 A script for numerically simulating outcomes on the Hearthstone competitive play ladder. 
 I built this to explore whether we can learn anything about skill variations in Hearthstone using only the distribution of ladder ranks. 
@@ -16,7 +16,7 @@ The theory is discussed briefly under "how it works," below.
 
 ladder-sim is written in Python using matplotlib and the Python 2.7 statistics package, but mostly with core modules and built-in functions. 
 
-## How to use
+# How to use
 
 All the functionality of the package is wrapped by the Season class. 
 To simulate a season of Ranked play on the ladder, create a new Season object. 
@@ -58,7 +58,7 @@ Once you've run the simulation, you can display some analytics about the results
 
 ![](./img/plotskills-demo.png)
 
-## How it works
+# How it works
 
 I've implemented all the public features of the Hearthstone ladder *verbatim* (see Issues for exceptions). 
 Ranks 25-Legend, Stars, Win Streaks are all included and AFAICT handled exactly as on Battle.net. 
