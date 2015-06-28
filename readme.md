@@ -35,9 +35,9 @@ Once you've run the simulation, you can display some analytics about the results
 
 * `S.PlotRanks()`: display a histogram of the ladder rankings produced by the simulation, along with the reported actual distribution for comparison ([see](http://us.battle.net/hearthstone/en/forum/topic/16858985939)). 
 
-!(./img/plotranks-demo.png)
+![](./img/plotranks-demo.png)
 
 * `S.PlotSkills()`: display a histogram of skill distribution in the simulated player population. The scale is a renormalized Elo scale where a difference of 1.0 gives a 95% chance to win. 
 
-!(./img/plotskills-demo.png)
+![](./img/plotskills-demo.png)
 
