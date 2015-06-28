@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
+
+- [ladder-sim](#ladder-sim)
+  - [How to use](#how-to-use)
+  - [How it works](#how-it-works)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # ladder-sim
 
 A script for numerically simulating outcomes on the Hearthstone competitive play ladder. 
