@@ -1,7 +1,11 @@
 # ladder-sim
 
 A script for numerically simulating outcomes on the Hearthstone competitive play ladder. 
+I built this to explore whether we can learn anything about skill variations in Hearthstone using only the distribution of ladder ranks. 
 
+## How to use
+
+All the functionality of the package is wrapped by the Season class. 
 To simulate a season of Ranked play on the ladder, create a new Season object. 
 Parameters of Season object (pass to initializer):
 
@@ -41,3 +45,19 @@ Once you've run the simulation, you can display some analytics about the results
 
 ![](./img/plotskills-demo.png)
 
+## How it works
+
+I've implemented all the public features of the Hearthstone ladder *verbatim* (see Issues for exceptions). 
+Ranks 25-Legend, Stars, Win Streaks are all included and AFAICT handled exactly as on Battle.net. 
+
+The main substantial assumption is the relationship between skill and winning. 
+The script determines the outcome of a game according to the following formula: 
+
+![](./img/win-model.png)
+
+2.94 is a normalizing constant so that each 1-point gap in skill corresponds to an odds ratio of 19:1 (skill level 1 has a 95% chance to beat skill level 0). 
+
+With this model, varying the distribution of skill in the player population corresponds to varying how much outcomes are dependent on skill. 
+If skills are widely dispersed in the population, then outcomes are highly dependent on skill -- if there are 5s and 1s playing each other, 5s will win an astronomical majority of the time. 
+Conversely, if the skill distribution is compressed, then outcomes will more often be determined by luck. 
+When skill is measured this way, the dispersion of skill in the population is a proxy for how skill-vs.-luck-based the game is, a common area of controversy in gaming. 
