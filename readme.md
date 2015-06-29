@@ -13,7 +13,7 @@
 A script for numerically simulating outcomes on the Hearthstone competitive play ladder. 
 I built this to explore whether we can learn anything about skill variations in Hearthstone using only the distribution of ladder ranks. 
 The theory is discussed briefly under "how it works," below. 
-I've written a longer explanation of my thoughts, ![here](http://notes.davegottlieb.com/post/122681963133/wip-learning-skill-distribution-without-knowing).
+I've written a longer explanation of my thoughts, [here](http://notes.davegottlieb.com/post/122681963133/wip-learning-skill-distribution-without-knowing).
 
 ladder-sim is written in Python using matplotlib and the Python 2.7 statistics package, but mostly with core modules and built-in functions. 
 
